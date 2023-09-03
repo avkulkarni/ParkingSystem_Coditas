@@ -9,9 +9,9 @@ namespace ParkingSystema_Coditas
         // Init 
         static ParkigSpace _parkigSpace = new ParkigSpace(new Dictionary<SlotTypeEnum, int>()
         {
-            { SlotTypeEnum.SMALL, 5 },
-            { SlotTypeEnum.MEDIUM, 3 },
-            { SlotTypeEnum.LARGE, 2 },
+            { SlotTypeEnum.SMALL, 50 },
+            { SlotTypeEnum.MEDIUM, 30 },
+            { SlotTypeEnum.LARGE, 20 },
         });
 
         static void Main(string[] args)
@@ -141,7 +141,8 @@ namespace ParkingSystema_Coditas
                         vehicleType = VehicleTypeEnum.SUV;
                         break;                   
                     default:
-                        Console.WriteLine("Not a valid type selection !");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Not a valid type selection !!!");
                         break;
                 }
             }
