@@ -17,3 +17,8 @@ VehicleTypeEnum can be of following type
 * Restore Nuget Packages
 * Set Startup Project to `ParkingSystemConsole`
 * Hit `F5`
+  
+# Future Scope
+* Slot numbering is not supported as of now
+* Vehicles Count and Clubing
+* Charges as per vehicle / slot
